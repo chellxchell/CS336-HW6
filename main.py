@@ -33,8 +33,11 @@ def solution(intervals):
         if val > opt_value:
             opt_value = val
             opt_intervals = inter
-    print("THE SET OF OPTIMAL ITEMS IS: {}".format(opt_intervals))
-    print('WITH AN OPTIMAL VALUE OF: {}'.format(opt_value))
+    f = open("solution.txt", "w")
+    f.write("THE SET OF OPTIMAL ITEMS IS: {}".format(opt_intervals))
+    f.write("\n")
+    f.write('WITH AN OPTIMAL VALUE OF: {}'.format(opt_value))
+    f.close()
     return opt_intervals
 
 
