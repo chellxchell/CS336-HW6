@@ -37,7 +37,7 @@ def solution(intervals):
     
     opt_val = M_Compute_OPT(intervals,n,p)
     opt_set = find_solution(intervals,n,p)
-    f = open("solution.txt", "w")
+    f = open("prob2_solution.txt", "w")
     f.write("THE SET OF OPTIMAL ITEMS IS: {}".format(opt_set))
     f.write("\n")
     f.write('WITH AN OPTIMAL VALUE OF: {}'.format(opt_val))
